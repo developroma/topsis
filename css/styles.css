@@ -1,0 +1,41 @@
+body {
+  height: 100%;
+  font-family: "Roboto";
+}
+
+.container {
+  display: block;
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.table {
+  border-collapse: collapse;
+  margin: 25vh auto 0 auto;
+  margin-bottom: 105px;
+}
+
+tr, th {
+  border: 1px solid grey;
+  padding: 11px;
+  color: rgba(44, 44, 44, 0.8784313725);
+}
+
+.all {
+  height: 100vh;
+  background-color: #ffe7a3;
+}
+.all__title {
+  text-align: center;
+  font-size: 46.5px;
+  color: rgba(44, 44, 44, 0.8784313725);
+}
+.all__inner {
+  height: 100vh;
+}
+
+.text_topsis {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}/*# sourceMappingURL=styles.css.map */
