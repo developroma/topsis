@@ -2,14 +2,16 @@
 
 let ecologyCol = document.querySelectorAll('#rate_1');
 let ecologyColSecond = document.querySelectorAll('#rate_2');
-let ecologyColThird = document.querySelectorAll('#rate_3')
-let ecologyColFourth = document.querySelectorAll('#rate_4')
+let ecologyColThird = document.querySelectorAll('#rate_3');
+let ecologyColFourth = document.querySelectorAll('#rate_4');
+let ecologyWeight = document.querySelector('.weight_1');
 
 let ecologyColNum;
 let allEcologyColNum = 0;
 
 
 let ecologyColFirstNum;
+let ecologyElem;
 
 ecologyCol.forEach(item => {
     ecologyColNum = Number(item.textContent);
@@ -20,7 +22,9 @@ ecologyCol.forEach(item => {
 ecologyCol.forEach(item => {
 
     ecologyColFirstNum = item.textContent / Math.pow(allEcologyColNum, 0.5);
-    console.log(ecologyColFirstNum)
+    console.log(ecologyColFirstNum);
+
+    ecologyElem = ecologyColFirstNum * Number(ecologyWeight.textContent);
 
 });
 
